@@ -1,10 +1,6 @@
 import requests
 from random import randint
 import random
-import os
-
-os.system("sudo apt-get install python3-requests")
-print("requests pip installed")
 
 def concat(default, num):
     num = str(num)
