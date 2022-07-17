@@ -1,5 +1,4 @@
-# gitlinux
+# GENERATE_SRILANKA_MOBILE_NUMBERS
 
-```
-sudo apt-get install git -y && sudo apt-get install python3-requests -y && git clone https://github.com/Raza9798/gitlinux.git && cd gitlinux && python3 main.py
-```
+TO RUN THE FILE `python3 main.py`
+
